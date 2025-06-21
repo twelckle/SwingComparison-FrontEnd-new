@@ -26,7 +26,7 @@ const UploadSection = ({ onAnalysisComplete }) => {
             const formData = new FormData();
             formData.append('video', file);
 
-            /const response = await axios.post('https://swingcomparison-backend.onrender.com/analyze', formData, {
+            const response = await axios.post('https://swingcomparison-backend.onrender.com/analyze', formData, {
             // const response = await axios.post("http://127.0.0.1:5000/analyze", formData, {
                 headers: { 'Content-Type': 'multipart/form-data' },
             });
